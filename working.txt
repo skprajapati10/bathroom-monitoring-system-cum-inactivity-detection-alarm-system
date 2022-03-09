@@ -1,0 +1,12 @@
+# bathroom-monitoring-system-cum-inactivity-detection-alarm-system
+alarm will rang if a person inside the bathroom will fall or become inactive
+
+
+Working Process---------------------
+In this project we are using 2 PIR sensors (PIR1 and PIR2) ,PIR1 placed outside the bathroom and PIR2 is placed inside the bathroom.
+PIR1 which is outside the room detects the human movement and it turns the lamp ON before going to the bathroom and 
+when a person enters into the bathroom then PIR1 stops detecting and PIR2 starts detecting the movement whereby lamp remains ON.
+Two IR sensor has also placed inside the room at certain height from the ground (i.e., approx 30 to 40 cm above the ground ) .It is  mainly a obstacle detection sensor and here we are using it to detect the presence of human at stationary condition . 
+Now the person is inside the bathroom so, PIR2 is detecting the movement and IR sensors are detecting the presence of human which makes the light remain in ON condition . 
+In case if the person stops moving inside the bathroom then PIR2 stops detecting the movement (means input 0) but IR is still detecting the presence of human (means input 1) and when this happens IR will wait for some time (here 10 sec delay is given) and if PR2 will not be able to detect the movement in between 10 seconds  then the buzzer will starts Ringing .and 
+buzzer won’t stop ringing until PIR2 detects the human movement.
